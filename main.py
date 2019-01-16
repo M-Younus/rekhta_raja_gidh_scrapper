@@ -17,25 +17,8 @@ link='https://www.rekhta.org/ebooks/raja-gidh-bano-qudsiya-ebooks'
 #%%
 browser.get(link)
 
-#%% actualRenderingDiv
-i=1
-while(1):
-    assert browser.title,"error"
-    browser.save_screenshot(f'all_images\\{i}.png')
-    browser.find_element_by_class_name('ebookprev').click()
-    
-    i+=1
-    if i >5:
-        break
-    
 #%%
 print(browser.title)
-
-#%%
-a=4
-browser.save_screenshot(f'all_images\\{a}.png')
-#%%
-browser.find_element_by_class_name('ebookprev').click()
 
 #%%
 
@@ -53,9 +36,4 @@ for i in range(1,559):
             continue
     
 
-#%%
-try:
-    1/0
-except:
-    print('np')
 #%%
